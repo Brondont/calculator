@@ -26,10 +26,12 @@ body {
 
 .App {
   margin: 0;
-  display: inherit;
 }
 
 .calculator {
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 5px;
 }
 
 #equation {
@@ -40,17 +42,17 @@ body {
   margin-bottom: 3px;
 }
 
-.calculator > form > section {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  column-gap: 1px;
-  row-gap: 1px;
-}
-
 #number0 {
   width: 101px;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 1px;
+  row-gap: 1px;
 }
 
 .buttons button {
